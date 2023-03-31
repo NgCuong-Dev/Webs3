@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/Content/NoiThat/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/Content/NoiThat/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/Content/NoiThat/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="/Content/NoiThat/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/Content/NoiThat/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3//Content/NoiThat/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="/Content/NoiThat/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/NoiThat/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Arbutus+Slab&family=Changa+One&display=swap" rel="stylesheet">
+    @*@Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <div class="container">
+                <a style="font-size:30px;padding-right:80px;color:white" class="font-weight-bold">Lamborgini</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Shop Car</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Infomation </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Customer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="search_icon">
+                            <ul>
+                                <li><a href="#"><img src="/Content/NoiThat/images/search-icon.png"></a></li>
+                                <li><a href="/Account/Login"><img src="/Content/NoiThat/images/user-icon.png"></a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- header section end -->
+    <div class="container"> @RenderBody()</div>
+
+    <!-- footer section start -->
+    <div class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h2 class="useful_text">Useful link </h2>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Our Designe</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h2 class="useful_text">Repair</h2>
+                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur  adipiscinaliqua  Loreadipiscing </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h2 class="useful_text">Social Media</h2>
+                    <div id="icon" style="color:white;font-size:40px">
+                        <a style="color:cornflowerblue" href="https://www.facebook.com/profile.php?id=100024636332556"><i class="fa-brands fa-facebook"></i></a>
+                        <a  style="color:aqua" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a  style="color:deeppink" href="https://www.instagram.com/__nc03_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a  style="color:darkgray" href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h1 class="useful_text">Our Repair center</h1>
+                    <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- Javascript files-->
+    <script src="/Content/NoiThat/js/jquery.min.js"></script>
+    <script src="/Content/NoiThat/js/popper.min.js"></script>
+    <script src="/Content/NoiThat/js/bootstrap.bundle.min.js"></script>
+    <script src="/Content/NoiThat/js/jquery-3.0.0.min.js"></script>
+    <script src="/Content/NoiThat/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/Content/NoiThat/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- javascript -->
+    <script src="/Content/NoiThat/js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<baitapltw.Models.Product>
+
+@{
+    ViewBag.Title = "Danh Sách Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout_NoiThat.cshtml";
+}
+
+<h2>Danh Sách Sản Phẩm</h2>
+
+<p>
+    @Html.ActionLink("Create New","Create","Book")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FeatureImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Des)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <img width="80%" src="@item.FeatureImage" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Des)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
